@@ -9,8 +9,7 @@ chứa toàn bộ thư mục gốc (bao gồm /bin, /etc,... và các thư việ
 mà chỉ có thể build lại image mới.
 
 ## System View
-* Image được cấu tạo bởi nhiều lớp (Layers) xếp chồng lên nhau dựa trên cơ chế **UnionFS**. (cụ thể là các layer nào ?, cơ chế UnionFS
-là gì ?).
+* Image được cấu tạo bởi nhiều lớp (Layers) xếp chồng lên nhau dựa trên cơ chế **UnionFS**.
 
 # Docker Container ~ Running process
 
@@ -31,3 +30,4 @@ khi có cấu hình volume.
 ## Ví dụ
 * **Docker Hub**: public registry tương tự kho apt mặc định của ubuntu.
 * **Private Registry (Harbor, AWS ECR)**: là registry - kho nội bộ dùng riêng cho 1 tổ chức nhất định.
+

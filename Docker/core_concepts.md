@@ -9,18 +9,18 @@ chứa toàn bộ thư mục gốc (bao gồm /bin, /etc,... và các thư việ
 mà chỉ có thể build lại image mới.
 
 ## System View
-* Image được cấu tạo bởi nhiều lớp (Layers) xếp chồng lên nhau dựa trên cơ chế **UnionFS**.
+* Image được cấu tạo bởi nhiều lớp (Layers) xếp chồng lên nhau dựa trên cơ chế **UnionFS** (**Union File System** là cơ chế trộn các layers rời rạc thành 1 khối thống nhất -> ta nhìn thấy như 1 volume/disk bình thường).
 
 # Docker Container ~ Running process
 
 ## Bản chất
 * Khi khởi chạy image thì Docker sẽ tạo ra 1 layer có thể ghi (Read - Write Layer) đè lên image tĩnh -> Đó là container.
 * Container thực chất chỉ là 1 process được Linux kernel cách ly dựa trên cơ chế Namespace (giả lập cho service container chạy như thể
-nó đang nằm 1 mình 1 OS) và Cgroups (giới hạn tài nguyên RAM, CPU, Disk I/O cho container).
+nó đang nằm 1 mình 1 OS) và Cgroups (giới hạn tài nguyên RAM, CPU, Disk I/O cho process container đó).
 
 ## Đặc điểm
 * Có trạng thái **động** (**Dynamic**); có thể ghi file, log, cài thêm package vào nhưng khi xóa container thì sẽ bị mất hết dữ liệu trừ
-khi có cấu hình volume. 
+khi có cấu hình volume.
 
 # Docker Registry ~ Yum/Apt Repository
 
@@ -30,4 +30,5 @@ khi có cấu hình volume.
 ## Ví dụ
 * **Docker Hub**: public registry tương tự kho apt mặc định của ubuntu.
 * **Private Registry (Harbor, AWS ECR)**: là registry - kho nội bộ dùng riêng cho 1 tổ chức nhất định.
+
 

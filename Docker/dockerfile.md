@@ -1,6 +1,3 @@
-> Viết dockerfile tối ưu cái gì so với việc truy cập thẳng vào container để chạy lệnh thủ công ?
-> Dockerfile tối ưu hơn so với script cài đặt ở điểm nào ?
-
 ## Bản chất
 * Dockerfile là phiên bản kỹ thuật của docker dựa trên các bước cấu hình/cài đặt mã nguồn thực tế khi không dùng Docker.
 
@@ -30,3 +27,4 @@ Chạy bằng user thường -> cấu hình vào ngay trong dockerFile, tại v�
 
 * Explicit: Có dùng tag phiên bản cụ thể (không dùng latest) không?
 -> việc ghi rõ phiên bản sẽ dễ dàng làm việc với các bộ phận liên quan (dev) trong trường hợp mã nguồn cần được thay đổi hay debug
+

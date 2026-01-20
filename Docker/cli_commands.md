@@ -15,3 +15,8 @@ docker stats
 ```
 docker stats <CONTAINER ID>
 ```
+
+## Xóa container
+```
+docker rm -f <CONTAINER ID>
+```

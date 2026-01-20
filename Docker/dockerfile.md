@@ -19,4 +19,5 @@
 * Explicit: Có dùng tag phiên bản cụ thể (không dùng latest) không?
 -> việc ghi rõ phiên bản sẽ dễ dàng làm việc với các bộ phận liên quan (dev) trong trường hợp mã nguồn cần được thay đổi hay debug
 
+* Performance: Đảm bảo giới hạn CPU, RAM, Disk I/O cho container để ổn định hệ thống trong 1 số trường hợp
 

@@ -55,5 +55,26 @@ docker rmi <image_id>
 ```
 docker system prune
 ```
-> Ở cách này sẽ đảm bảo giải phóng dung lượng trống cho ổ cứng nhưng cần có sẵn remote cache để khi chạy build image sẽ tránh tốn thời gian cho lần build sau (remote cache sẽ nằm trên registry như DockerHub,...)
+> Ở cách này sẽ đảm bảo giải phóng dung lượng trống cho ổ cứng nhưng cần có sẵn remote cache để khi chạy build image sẽ tránh tốn thời gian cho lần build sau (remote cache sẽ nằm trên registry như DockerHub,...). Cần đăng nhập registry qua
+> ```
+> docker login
+> ```
+> Đẩy image lên registry và tải về image qua:
+> ```
+> docker push
+> ```
+> ```
+> docker pull
+> ```
+
+## Các lệnh khác
+```
+docker start <id>
+```
+```
+docker stop <id>
+```
+```
+docker pause/unpause <id>
+```
 

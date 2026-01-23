@@ -29,5 +29,7 @@ file đó.
 * ports và expose
   * ports: ánh xạ port host vào port cục bộ trong container để client có thể truy cập dịch vụ nằm trong container
   * expose: mang tính khai báo cổng cục bộ phục vụ cho app - service
-* Race Condition: dùng **depends_on**, **healthcheck** trong cấu hình docker-compose để đảm bảo tính trước - sau của các service khi khởi động
+* Race Condition:
+  * Dùng **depends_on**, **healthcheck** trong cấu hình docker-compose để đảm bảo tính trước - sau của các service khi khởi động
   để tránh các lỗi do sai thứ tự khởi động. (ví dụ: DB service cần khởi động và có thể queryDB trước khi Backend service khởi động).
+

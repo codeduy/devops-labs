@@ -1,6 +1,6 @@
 ```mermaid
 graph TD
-    User["User"] -->|"1. docker run / up"| CLI["Docker CLI (docker-ce-cli)"]
+    User["Admin"] -->|"1. docker run / up"| CLI["Docker CLI (docker-ce-cli)"]
     CLI -->|"2. REST API Request"| Daemon["Docker Daemon (dockerd / docker-ce)"]
     
     subgraph Docker_Engine
@@ -74,4 +74,5 @@ graph LR
     class CodeFolder dev;
     class VolumeBucket prod;
 ```
+
 
